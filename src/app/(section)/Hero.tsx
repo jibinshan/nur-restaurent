@@ -48,8 +48,8 @@ const Hero = ({ }) => {
         });
     }, [])
     return (
-        <section id="hero" className="flex w-full items-center justify-center">
-            <div className="relative flex min-h-[100vh] w-full items-center justify-center bg-black">
+        <section id="hero" className="relative flex w-full items-center justify-center">
+            <div className="flex min-h-[100vh] w-full items-center justify-center bg-black">
                 <div className="absolute left-0 top-0 z-10 h-full w-full bg-black/50"></div>
                 <div className="absolute left-0 top-0 h-full w-full overflow-hidden">
                     <video
@@ -78,34 +78,32 @@ const Hero = ({ }) => {
                     </Link>
                 </div>
             </div> */}
-                <div className="w-full z-50 flex md:h-[80vh] max-w-[1300px] items-center justify-center md:justify-start">
+                <div className="relative w-full z-50 flex md:h-[80vh] max-w-[1300px] items-center justify-center md:justify-start">
                     <div className="head-container flex w-full md:w-2/3 h-full  flex-col  justify-center items-start gap-7 px-3 md:px-0">
                         <h1 className="head-hero font-italiana text-5xl w-full sm:text-5xl md:text-8xl md:leading-[110px] text-center md:text-start text-background">
                             The Love <br />Language of <br />Arabian Hospitality
                         </h1>
                         <div className="w-full flex justify-center md:justify-start gap-4">
                             <Link href="/menu">
-                                <Button className="hero-button flex font-playfair items-center justify-center gap-3 font-semibold px-6 py-7 uppercase bg-white text-black rounded-full hover:bg-black hover:text-white">
+                                <Button className="hero-button flex font-playfair items-center justify-center gap-3 font-semibold px-6 py-7 uppercase bg-white text-black rounded-full hover:bg-[#9c5249] hover:text-white">
                                     View Menu
                                     <Icons.rightArrow className="duration-300 ease-in-out group-hover:translate-x-1" />
                                 </Button>
                             </Link>
                         </div>
                     </div>
-                    <div className="hidden md:flex w-0 md:w-1/3 md:justify-center md:items-center">
-                        <Button
-                            asChild
-                            className="table-button z-50 flex aspect-square h-[300px] flex-col items-center font-inter font-thin justify-center rounded-full bg-[#1D1D1D] border-[2px] border-[#f7f4ed] px-0 py-0 text-center text-4xl uppercase text-[#8F8F8F] hover:bg-[#1D1D1D]"
-                        >
-                            <Link href="/table-booking">
-                                <Icons.dining color="#8F8F8F" className="w-24" />
-                                Table
-                                <br />
-                                Booking
-                            </Link>
-                        </Button>
-                    </div>
                 </div>
+            </div>
+            <div className="hidden absolute top-3 right-0 md:flex w-0 md:w-1/3 md:justify-center md:items-center">
+                <Button
+                    asChild
+                    className="table-button z-50 flex aspect-square h-[240px] flex-col items-center font-inter font-thin justify-center rounded-full bg-[#1D1D1D] border-[2px] border-[#b58c67] px-0 py-0 text-center text-3xl uppercase text-[#b58c67] hover:bg-[#1D1D1D]"
+                >
+                    <Link href="/table-booking">
+                        <Icons.dining color="#b58c67" className="w-24" />
+                        Table<br /> Booking
+                    </Link>
+                </Button>
             </div>
         </section>
     );

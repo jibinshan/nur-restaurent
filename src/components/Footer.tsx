@@ -49,7 +49,7 @@ const Footer = ({ }) => {
             variant="link"
             className="px-0 uppercase text-accent font-semibold text-[#593710] font-playfair"
           >
-            <Link href="/about-us">About</Link>
+            <Link href="#">About</Link>
           </Button>
           <Button
             asChild
@@ -61,12 +61,23 @@ const Footer = ({ }) => {
         </div>
 
         <div className="w-full flex justify-center items-center gap-4">
-          <Link href='https://in.search.yahoo.com/search;_ylt=AwrKEbVGvTlngQIAeua7HAx.;_ylc=X1MDMjExNDcyMzAwMwRfcgMyBGZyA21jYWZlZV9lLTI2ODYwXzNQQy12BGZyMgNzYi10b3AEZ3ByaWQDdmVyd1pwdWpTbTZxZU5RN2lEMjJOQQRuX3JzbHQDMARuX3N1Z2cDMARvcmlnaW4DaW4uc2VhcmNoLnlhaG9vLmNvbQRwb3MDMARwcXN0cgMEcHFzdHJsAzAEcXN0cmwDMzAEcXVlcnkDaXN0YW5idWwlMjBiYXIlMjBhbmQlMjBncmlsbCUyMHdvb2x0b24EdF9zdG1wAzE3MzE4MzcyNzE-?p=istanbul+bar+and+grill+woolton&fr=mcafee_e-26860_3PC-v&type=F210IN714G91841MNhJ%2BFSIbRCCvKdyV%2F2R5GgXXfvl%2BaCFyile5iUQkkoM%3D&fr2=sb-top' className="text-[#593710] uppercase font-bai font-semibold tracking-[4px] text-sm"><Icons.google /> </Link>
-          <Link href='https://www.facebook.com/Istanbulwoolton/' className="text-[#593710] uppercase font-bai font-semibold tracking-[4px] text-sm"><Icons.facebook /></Link>
-          <Link href='https://www.instagram.com/istanbulwoolton/' className="text-[#593710] uppercase font-bai font-semibold tracking-[4px] text-sm"><Icons.instagram /></Link>
+          <Link href='https://g.co/kgs/eEdUrdK' className="text-[#593710] uppercase font-bai font-semibold tracking-[4px] text-sm"><Icons.google /> </Link>
+          <Link href='https://www.tripadvisor.com/Restaurant_Review-g187069-d28003565-Reviews-Nur_Cafe-Manchester_Greater_Manchester_England.html' className="text-[#593710] uppercase font-bai font-semibold tracking-[4px] text-sm"><Icons.unknown /></Link>
+          <Link href='https://www.instagram.com/nurcafemcr/?hl=en' className="text-[#593710] uppercase font-bai font-semibold tracking-[4px] text-sm"><Icons.instagram /></Link>
         </div>
       </div >
-      <p className="text-[#64615C]">© 2024 Istanbul <Link href="https://foodo.ai">Powered By Foodo</Link></p>
+      <div className="flex w-full items-center justify-center">
+        <p className="w-fit px-4 text-center text-xl">
+          © 2024 Nur Cafe Manchester, All Rights Reserved | {" "}
+          <Link
+            href="https://foodo.ai"
+            className="text-primary hover:underline"
+            target="_blank"
+          >
+            Powered By Foodo
+          </Link>
+        </p>
+      </div>
     </footer >
   );
 };

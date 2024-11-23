@@ -5,6 +5,7 @@ import {
 } from "@/lib/organize-menu-by-category";
 import type { MenuCategory } from "@/types/menu-category.type";
 import type { MenuItem } from "@/types/menu-item.type";
+import type { ModelData } from "@/types/model-data.type";
 import type { Restaurant } from "@/types/restaurant.type";
 import type { Review } from "@/types/review.type";
 import { useQuery } from "@tanstack/react-query";
@@ -22,6 +23,7 @@ type MenuContextType = {
   stripePublishableKey: string;
   restaurant: Restaurant | undefined;
   reviews: Review[] | undefined;
+  modelData: ModelData[] | undefined;
 };
 
 const RestaurantContext = createContext<MenuContextType | undefined>(undefined);
@@ -88,6 +90,24 @@ export const RestaurantProvider: React.FC<{ children: React.ReactNode }> = ({
     },
   });
 
+  const { data: modelData } = useQuery({
+    queryKey: ["mddel", "all"],
+    queryFn: async () => {
+      const res: AxiosResponse<{
+        data: {
+          rows: ModelData[];
+        };
+      }> = await axios.get(`https://api.prod.sdk.thefoodo.com/model/all`, {
+        headers: {
+          "x-api-key": "2M4QMv8O5JTzSXBOR1H27EU8POBV1JJ7LZSHQO9O3O",
+        },
+      });
+      const data = res.data.data.rows;
+      return data.filter((item) => item.meta.restaurantID === restaurantID);
+    },
+  });
+
+
   const { data: menuCategory } = useQuery({
     queryKey: ["restaurant", restaurantID, "category"],
     queryFn: async () => {
@@ -129,6 +149,7 @@ export const RestaurantProvider: React.FC<{ children: React.ReactNode }> = ({
         stripePublishableKey,
         restaurant,
         reviews,
+        modelData
       }}
     >
       {children}

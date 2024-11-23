@@ -6,10 +6,10 @@ import { Oswald, Roboto, Playfair_Display, Italiana, Mrs_Saint_Delafield } from 
 import Providers from "@/app/Providers";
 
 export const metadata: Metadata = {
-  title: "Istanbul Restaurant Liverpool | Authentic Turkish Cuisine",
+  title: "Nur Cafe | Best Cafe Manchester | Breakfast Lunch",
   description:
-    "Istanbul Liverpool was born from a passion for bringing the finest cuts of beef to the table, with a commitment to sustainability and premium quality.",
-  icons: [{ rel: "icon", url: "/images/logo.png" }],
+    "Nur Cafe Manchester was born from a passion for bringing the finest cuts of beef to the table, with a commitment to sustainability and premium quality.Best Cafe In Manchester",
+  icons: [{ rel: "icon", url: "/Nur.svg" }],
 };
 
 const manrope = Oswald({

@@ -7,14 +7,29 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 const TopPicks = ({ }) => {
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger)
-        gsap.to(".move-top", {
-            scrollTrigger: {
-                trigger: ".move-top",
-                toggleActions: 'restart none none none',
-            },
-            y: -100, // Adjust the zoom scale as per your need
-            duration: 2
-        });
+        const mm = gsap.matchMedia();
+
+        mm.add("(max-width:690px)", () => {
+            gsap.to(".move-top", {
+                scrollTrigger: {
+                    trigger: ".move-top",
+                    toggleActions: 'restart none none none',
+                },
+                y: -10, // Adjust the zoom scale as per your need
+                duration: 2
+            });
+        })
+
+        mm.add("(min-width:691px)", () => {
+            gsap.to(".move-top", {
+                scrollTrigger: {
+                    trigger: ".move-top",
+                    toggleActions: 'restart none none none',
+                },
+                y: -100, // Adjust the zoom scale as per your need
+                duration: 2
+            });
+        })
 
     }, [])
     return (

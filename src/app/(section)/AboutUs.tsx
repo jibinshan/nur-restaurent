@@ -11,32 +11,66 @@ const AboutUs = ({ }) => {
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger)
+        const mm = gsap.matchMedia();
 
-        gsap.to('.section-one', {
-            scrollTrigger: {
-                trigger: ".section-one",
-                toggleActions: 'restart none none none',
-                // start: "top 80%", // When the top of the .title enters 80% of the viewport
-                // end: "top 50%",   // When the top of the .title reaches 50% of the viewport
-                // scrub: true
-            },
-            y: -100,
-            duration: 2
+        mm.add("(max-width:690px)", () => {
+            gsap.to('.section-one', {
+                scrollTrigger: {
+                    trigger: ".section-one",
+                    toggleActions: 'restart none none none',
+                    // start: "top 80%", // When the top of the .title enters 80% of the viewport
+                    // end: "top 50%",   // When the top of the .title reaches 50% of the viewport
+                    // scrub: true
+                },
+                y: -40,
+                duration: 2
 
+            })
+
+
+            gsap.to('.left-container', {
+                scrollTrigger: {
+                    trigger: ".section-one",
+                    toggleActions: 'restart none none none',
+                    // start: "top 80%", // When the top of the .title enters 80% of the viewport
+                    // end: "top 50%",   // When the top of the .title reaches 50% of the viewport
+                    // scrub: true
+                },
+                y: -20,
+                x: 0,
+                duration: 2
+
+            })
         })
 
-        gsap.to('.left-container', {
-            scrollTrigger: {
-                trigger: ".section-one",
-                toggleActions: 'restart none none none',
-                // start: "top 80%", // When the top of the .title enters 80% of the viewport
-                // end: "top 50%",   // When the top of the .title reaches 50% of the viewport
-                // scrub: true
-            },
-            x: -100,
-            duration: 2
+        mm.add("(min-width:691px)", () => {
+            gsap.to('.section-one', {
+                scrollTrigger: {
+                    trigger: ".section-one",
+                    toggleActions: 'restart none none none',
+                    // start: "top 80%", // When the top of the .title enters 80% of the viewport
+                    // end: "top 50%",   // When the top of the .title reaches 50% of the viewport
+                    // scrub: true
+                },
+                y: -100,
+                duration: 2
 
+            })
+
+            gsap.to('.left-container', {
+                scrollTrigger: {
+                    trigger: ".section-one",
+                    toggleActions: 'restart none none none',
+                    // start: "top 80%", // When the top of the .title enters 80% of the viewport
+                    // end: "top 50%",   // When the top of the .title reaches 50% of the viewport
+                    // scrub: true
+                },
+                x: -100,
+                duration: 2
+
+            })
         })
+
 
         const layers = document.querySelectorAll('.move');
         const speedFactor = 120;

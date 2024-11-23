@@ -8,6 +8,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 const Menu = ({ }) => {
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger)
+
         gsap.to(".zoom-scroll", {
             scrollTrigger: {
                 trigger: ".zoom-scroll",

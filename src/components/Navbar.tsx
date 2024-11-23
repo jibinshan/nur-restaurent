@@ -36,7 +36,7 @@ const Navbar = ({
     >
       <div className="flex h-full w-full items-center justify-between">
         <Link href="/" className="flex md:hidden">
-          <Image src="/images/logo.png" width={140} height={120} alt="logo" className="w-24" />
+          <Image src="/Nur.svg" width={140} height={120} alt="logo" className="w-24" />
         </Link>
         {!isScrolled && (
           <div className="hidden w-full flex-row items-center justify-center gap-[3.48rem] md:flex">
@@ -75,7 +75,7 @@ const Navbar = ({
                   variant="link"
                   className="px-0 uppercase text-accent font-semibold text-white font-playfair"
                 >
-                  <Link href="/about-us">About</Link>
+                  <Link href="#">About</Link>
                 </Button>
                 <Button
                   asChild
@@ -94,7 +94,7 @@ const Navbar = ({
             >
               <Link href="/gift-voucher">Gift Voucher</Link>
             </Button> */}
-            <Link href="/table-booking">
+            {/* <Link href="/table-booking">
               <Button
                 className="group h-11 items-center gap-[1.19rem] rounded-full font-semibold uppercase bg-white/30 backdrop-blur-md font-playfair px-6 py-7"
                 variant="secondary"
@@ -102,7 +102,7 @@ const Navbar = ({
                 Book Table
                 <Icons.rightArrow className="duration-300 ease-in-out group-hover:translate-x-1" />
               </Button>
-            </Link>
+            </Link> */}
           </div>
         )
         }

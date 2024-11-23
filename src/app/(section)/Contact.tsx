@@ -43,8 +43,8 @@ const Contact = ({ }) => {
                 }}
             />
             <div
-                className="relative h-full w-full md:w-1/3 bg-primary py-24 px-6 rounded-t-full z-30">
-                <div className="absolute left-0 top-0 h-full w-full overflow-hidden rounded-t-full"
+                className="relative h-full w-full md:w-1/3 bg-primary py-24 px-6 rounded-t-full z-40">
+                <div className="absolute left-0 top-0 h-full w-full overflow-hidden rounded-t-full z-10"
                     style={{
                         backgroundImage: "url('/images/home/frame.png')",
                         backgroundSize: "cover",
@@ -59,17 +59,17 @@ const Contact = ({ }) => {
                     </div>
                     <div className="flex flex-col gap-2 items-center justify-center">
                         <p className="text-[#B57978] font-inter text-lg">Booking request</p>
-                        <Link href="tel:+44 1234 567890" className="text-[#FFE9B6] font-inter text-xl">+44 1234 567890</Link>
-                        <Link href="mailto:info@nurcafe.co.uk" className="text-[#FFE9B6] font-inter text-xl">info@nurcafe.co.uk</Link>
+                        <Link href="tel:+441234567890" className="text-[#FFE9B6] font-inter text-xl z-40">+44 1234 567890</Link>
+                        <Link href="mailto:info@nurcafe.co.uk" className="text-[#FFE9B6] font-inter text-xl z-40">info@nurcafe.co.uk</Link>
                     </div>
                     <div className="flex flex-col gap-2 items-center justify-center">
                         <p className="text-[#B57978] font-inter text-lg">Location</p>
-                        <Link href="tel:+44 1234 567890" className="text-[#FFE9B6] font-inter text-xl">45 Deansgate, Manchester,<br /> United Kingdom, M3 2AY.</Link>
+                        <Link href="https://maps.app.goo.gl/4xKqiTXEPTeFuwUw8" target="_blank" className="text-[#FFE9B6] font-inter text-xl z-40">45 Deansgate, Manchester,<br /> United Kingdom, M3 2AY.</Link>
                     </div>
                     <div className="flex flex-col gap-2 items-center justify-center">
                         <p className="text-[#B57978] font-inter text-lg">Opening Hours</p>
-                        <p className="text-[#FFE9B6] font-inter text-xl">Monday-Friday: 8:00 AM - 10:00 PM</p>
-                        <p className="text-[#FFE9B6] font-inter text-xl">Saturday-Sunday: 9:00 AM - 11:00 PM</p>
+                        <p className="text-[#FFE9B6] font-inter text-xl">Monday-Friday: 8:00 AM - 22:00 PM</p>
+                        <p className="text-[#FFE9B6] font-inter text-xl">Saturday-Sunday: 9:00 AM - 23:00 PM</p>
                     </div>
                 </div>
             </div>
