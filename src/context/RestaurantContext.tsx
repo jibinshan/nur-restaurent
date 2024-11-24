@@ -118,7 +118,10 @@ export const RestaurantProvider: React.FC<{ children: React.ReactNode }> = ({
       }> = await axios.get(
         `${apiUrl}/restaurant/${restaurantID}/category?pageSize=30000&pageNum=1&filter_enabled=true`,
       );
-      return res.data.data.rows;
+      const data = res.data.data.rows;
+      return data
+        ?.filter((item) => item.order)
+        .sort((a, b) => a.order - b.order);
     },
   });
 
