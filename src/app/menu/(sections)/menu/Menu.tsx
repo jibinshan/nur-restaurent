@@ -108,7 +108,7 @@ const Menu = () => {
   return (
     <section className="flex h-full w-full items-center justify-center">
       <div className="flex h-full w-full max-w-[1300px] flex-col gap-4 px-2 py-[2.5rem] pb-28 md:gap-[2rem]">
-        <div className="fixed top-0 z-50 flex w-full flex-col gap-4 pb-2 pt-3 md:sticky bg-[#fffdf0] md:gap-2 md:pt-2">
+        <div className="fixed top-0 z-50 flex w-full flex-col gap-4 md:sticky bg-[#fffdf0] md:gap-2 py-3 md:py-4 px-2 md:px-6">
           <div className="flex w-full items-center justify-between gap-4">
             <div className="flex w-full gap-2 pr-4 md:pr-0">
               <div
@@ -123,7 +123,7 @@ const Menu = () => {
               className="hidden items-center gap-2 font-semibold md:flex"
               asChild
             >
-              <Link href="/pdf/dine-in-menu.pdf" target="_blank">
+              <Link href="#">
                 <FileText />
                 Download Menu
               </Link>
@@ -209,8 +209,8 @@ const Menu = () => {
             </>
           )
         }
-      </div >
-    </section >
+      </div>
+    </section>
   );
 };
 

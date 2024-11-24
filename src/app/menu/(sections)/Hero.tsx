@@ -9,7 +9,7 @@ const Hero = ({ }) => {
       }}
     >
       <h1 className="font-playfair text-[4.75rem] leading-[80%] text-[#fffdf0]">Our Menu</h1>
-      <p className="text-[#fffdf0]">Chose & taste what you like</p>
+      <p className="text-[#fffdf0]">Choose & taste what you like</p>
     </section>
   );
 };
