@@ -67,7 +67,7 @@ const Contact = ({ }) => {
   });
 
   return (
-    <section className="flex flex-col h-full w-full items-center justify-center bg-[#fff5e5] " id="contact">
+    <section className="flex flex-col h-full w-full items-center justify-center bg-[#fff5e5]" id="contact">
       <div className="flex h-full w-full max-w-[1300px] flex-col gap-[2.5rem] px-0 pl-0 md:px-2 py-12 md:py-24">
         <div className="flex w-full flex-col lg:flex-row">
           <div className="flex w-full flex-col bg-[#fff5e5] lg:w-1/2 px-6 lg:px-28 gap-8">
@@ -98,16 +98,16 @@ const Contact = ({ }) => {
                   </Link>
                 </div>
               </div>
-              <div className="flex items-center gap-6">
+              {/* <div className="flex items-center gap-6">
                 <div>
                   <div className="h-fit w-fit rounded-full p-2">
                     <Phone />
                   </div>
                 </div>
-                {/* <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4">
                   <Link href="tel:+441234567890" className="">+44 1234 567890</Link>
-                </div> */}
-              </div>
+                </div>
+              </div> */}
               <div className="flex items-center gap-6">
                 <div>
                   <div className="h-fit w-fit rounded-full  p-2">
@@ -209,7 +209,7 @@ const Contact = ({ }) => {
                     </div>
                   </div>
                   <div className="flex w-full flex-col pt-7 lg:flex-row">
-                    <Button className="w-full font-bai rounded-2xl py-6" disabled={bookTableMutation.isPending}>Contact US</Button>
+                    <Button className="w-full font-bai rounded-2xl py-6 hover:bg-secondary" disabled={bookTableMutation.isPending}>Contact US</Button>
                   </div>
                 </form>
               </Form>
@@ -217,7 +217,7 @@ const Contact = ({ }) => {
           </div>
         </div>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d861.6037461797074!2d-2.8682499999999997!3d53.374436100000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b1feb87f19015%3A0xd0e5ee710b67c07f!2sIstanbul%20Bar%20%26%20Grill%20-%20Woolton!5e1!3m2!1sen!2sin!4v1731837710937!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2374.1787291241326!2d-2.2487625232600323!3d53.4831362723293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb100499bf4a9%3A0xd83801f7a87ef198!2zTsO5ciBjYWZl!5e0!3m2!1sen!2sin!4v1732444887250!5m2!1sen!2sin"
           style={{ border: 0 }}
           allowFullScreen
           loading="lazy"

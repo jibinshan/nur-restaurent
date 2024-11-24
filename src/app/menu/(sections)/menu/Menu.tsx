@@ -91,11 +91,8 @@ const Menu = () => {
     sortedMenu?.forEach((data) => {
       const categoryexist = data.items.find(
         (Item) =>
-          Item?.extras?.availability?.days.includes(
-            format(Date.now(), "EEEE").toLowerCase()
-          ) &&
-          (Item?.extras?.menuItemOrderType === "both" ||
-            Item?.extras?.menuItemOrderType === "takeaway")
+        (Item?.extras?.menuItemOrderType === "both" ||
+          Item?.extras?.menuItemOrderType === "takeaway")
       )?._idCategory;
 
       if (categoryexist && !updatedCategories.includes(categoryexist)) {
@@ -120,7 +117,7 @@ const Menu = () => {
               <Search query={query} setQuery={setQuery} />
             </div>
             <Button
-              className="hidden items-center gap-2 font-semibold md:flex"
+              className="hidden items-center gap-2 font-semibold md:flex hover:bg-secondary px-6 py-6"
               asChild
             >
               <Link href="#">
@@ -170,7 +167,7 @@ const Menu = () => {
                   className={cn(
                     data._id === currentCategory &&
                     "sticky top-[150px] z-40 w-full py-3 lg:static lg:top-0",
-                    "font-sans text-xl font-bold tracking-[0.00938em] lg:font-sans lg:text-base lg:font-normal lg:tracking-normal bg-[#fffdf0]",
+                    "font-sans text-xl font-bold tracking-[0.00938em] lg:font-sans lg:text-base  lg:tracking-normal bg-[#fffdf0] px-3 py-2",
                     data._id !== existCategory.find((categoryid) => categoryid === data._id) && "w-0 h-0 p-0 tracking-[0px]"
                   )}
                 >
@@ -178,7 +175,7 @@ const Menu = () => {
                 </h1>
                 <div className="hidden h-full w-full grid-cols-1 gap-4 md:grid lg:grid-cols-2">
                   {data.items.map((item) => {
-                    if (item.extras?.availability?.days.includes(format(Date.now(), "EEEE").toLowerCase()) && (item.extras?.menuItemOrderType === "both" || item.extras?.menuItemOrderType === "takeaway")) {
+                    if ((item.extras?.menuItemOrderType === "both" || item.extras?.menuItemOrderType === "takeaway")) {
                       return <MenuItem key={item._id} id={item._id} />;
                     } else {
                       return null
@@ -187,7 +184,7 @@ const Menu = () => {
                 </div>
                 <div className="grid h-full w-full grid-cols-1 gap-4 md:hidden lg:grid-cols-2">
                   {data.items.map((item) => {
-                    if (item.extras?.availability?.days.includes(format(Date.now(), "EEEE").toLowerCase()) && (item.extras?.menuItemOrderType === "both" || item.extras?.menuItemOrderType === "takeaway")) {
+                    if ((item.extras?.menuItemOrderType === "both" || item.extras?.menuItemOrderType === "takeaway")) {
                       return <MenuItemMobile key={item._id} id={item._id} />;
                     } else {
                       return null

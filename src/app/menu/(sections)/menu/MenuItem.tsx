@@ -21,7 +21,7 @@ const MenuItem: FC<MenuItemProps> = ({ id }) => {
   const item = getMenuItemById(id, items);
   return (
     item && (
-      <div className="z-10 flex h-[200px] w-full flex-row items-center border-[1px] border-primary rounded-xl overflow-hidden">
+      <div className="z-10 flex h-[200px] w-full flex-row items-center border-[1px] border-primary rounded-xl overflow-hidden bg-[#fffdf0]">
         <div className="flex h-full w-[40%]">
           {item.images[0] ? (
             <Image

@@ -7,7 +7,7 @@ const page = ({ }) => {
     <main className="relative flex h-full w-full">
       <div className="flex h-full w-full flex-col items-center justify-center bg-[#fff5e5]">
         <Navbar position="absolute" />
-        <div className="h-[10vh]" id="hero"></div>
+        <div className="w-full h-[15vh] bg-primary" id="hero"></div>
         <Contact />
         <Footer />
       </div>

@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import "@/styles/lines.css";
+import "@/styles/ham.css";
 import { cn } from "@/lib/utils";
 import { type Metadata } from "next";
 import { Oswald, Roboto, Playfair_Display, Italiana, Mrs_Saint_Delafield } from "next/font/google";

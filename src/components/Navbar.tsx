@@ -75,7 +75,7 @@ const Navbar = ({
                   variant="link"
                   className="px-0 uppercase text-accent font-semibold text-white font-playfair"
                 >
-                  <Link href="#">About</Link>
+                  <Link href="/table-booking">Reservations</Link>
                 </Button>
                 <Button
                   asChild
@@ -149,7 +149,7 @@ const Navbar = ({
                 className="px-1 py-1 text-primary hover:bg-transparent hover:text-primary md:hidden"
               >
                 <span className="sr-only">Menu</span>
-                <Icons.menu />
+                <EqualizerIcon />
               </Button>
             </Sidebar>
           )
@@ -160,3 +160,14 @@ const Navbar = ({
 };
 
 export default Navbar;
+
+
+const EqualizerIcon: React.FC = () => {
+  return (
+    <div className="equalizer-icon rotate">
+      <div className="bar"></div>
+      <div className="bar"></div>
+      <div className="bar"></div>
+    </div>
+  );
+};
