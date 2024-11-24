@@ -61,9 +61,9 @@ const Footer = ({ }) => {
         </div>
 
         <div className="w-full flex justify-center items-center gap-4">
-          <Link href='https://g.co/kgs/eEdUrdK' className="text-[#593710] uppercase font-bai font-semibold tracking-[4px] text-sm"><Icons.google /> </Link>
-          <Link href='https://www.tripadvisor.com/Restaurant_Review-g187069-d28003565-Reviews-Nur_Cafe-Manchester_Greater_Manchester_England.html' className="text-[#593710] uppercase font-bai font-semibold tracking-[4px] text-sm"><Icons.unknown /></Link>
-          <Link href='https://www.instagram.com/nurcafemcr/?hl=en' className="text-[#593710] uppercase font-bai font-semibold tracking-[4px] text-sm"><Icons.instagram /></Link>
+          <Link href='https://g.co/kgs/eEdUrdK' target="_blank" className="text-[#593710] uppercase font-bai font-semibold tracking-[4px] text-sm"><Icons.google /> </Link>
+          <Link href='https://www.tripadvisor.com/Restaurant_Review-g187069-d28003565-Reviews-Nur_Cafe-Manchester_Greater_Manchester_England.html' target="_blank" className="text-[#593710] uppercase font-bai font-semibold tracking-[4px] text-sm"><Icons.unknown /></Link>
+          <Link href='https://www.instagram.com/nurcafemcr/?hl=en' target="_blank" className="text-[#593710] uppercase font-bai font-semibold tracking-[4px] text-sm"><Icons.instagram /></Link>
         </div>
       </div >
       <div className="flex w-full items-center justify-center">

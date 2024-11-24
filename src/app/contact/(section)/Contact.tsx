@@ -104,9 +104,9 @@ const Contact = ({ }) => {
                     <Phone />
                   </div>
                 </div>
-                <div className="flex flex-col gap-4">
-                  <Link href="tel:01514286842" className="">01514286842</Link>
-                </div>
+                {/* <div className="flex flex-col gap-4">
+                  <Link href="tel:+441234567890" className="">+44 1234 567890</Link>
+                </div> */}
               </div>
               <div className="flex items-center gap-6">
                 <div>
@@ -115,23 +115,23 @@ const Contact = ({ }) => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <Link href="mailto:info@istanbulbargrill.co.uk"
-                    className="">info@istanbulbargrill.co.uk</Link>
+                  <Link href="mailto:info@nurcafe.co.uk"
+                    className="">info@nurcafe.co.uk</Link>
                 </div>
               </div>
               <div className="flex justify-start gap-4 items-center">
-                <Link href='https://www.instagram.com/istanbulwoolton/'>
+                <Link href='https://www.instagram.com/nurcafemcr/?hl=en' target="_blank">
                   <Icons.instagram />
                 </Link>
-                <Link href='https://www.tripadvisor.co.uk/Restaurant_Review-g186337-d7312552-Reviews-Istanbul_Bar_Grill_Woolton-Liverpool_Merseyside_England.html'>
+                <Link href='https://www.tripadvisor.com/Restaurant_Review-g187069-d28003565-Reviews-Nur_Cafe-Manchester_Greater_Manchester_England.html' target="_blank">
                   <Icons.unknown />
                 </Link>
-                <Link href='https://in.search.yahoo.com/search;_ylt=AwrKEbVGvTlngQIAeua7HAx.;_ylc=X1MDMjExNDcyMzAwMwRfcgMyBGZyA21jYWZlZV9lLTI2ODYwXzNQQy12BGZyMgNzYi10b3AEZ3ByaWQDdmVyd1pwdWpTbTZxZU5RN2lEMjJOQQRuX3JzbHQDMARuX3N1Z2cDMARvcmlnaW4DaW4uc2VhcmNoLnlhaG9vLmNvbQRwb3MDMARwcXN0cgMEcHFzdHJsAzAEcXN0cmwDMzAEcXVlcnkDaXN0YW5idWwlMjBiYXIlMjBhbmQlMjBncmlsbCUyMHdvb2x0b24EdF9zdG1wAzE3MzE4MzcyNzE-?p=istanbul+bar+and+grill+woolton&fr=mcafee_e-26860_3PC-v&type=F210IN714G91841MNhJ%2BFSIbRCCvKdyV%2F2R5GgXXfvl%2BaCFyile5iUQkkoM%3D&fr2=sb-top'>
+                <Link href='https://g.co/kgs/eEdUrdK' target="_blank">
                   <Icons.google />
                 </Link>
-                <Link href='https://www.facebook.com/Istanbulwoolton/'>
+                {/* <Link href='https://www.facebook.com/Istanbulwoolton/'>
                   <Icons.facebook />
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

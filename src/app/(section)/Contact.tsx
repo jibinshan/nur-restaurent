@@ -59,7 +59,7 @@ const Contact = ({ }) => {
                     </div>
                     <div className="flex flex-col gap-2 items-center justify-center">
                         <p className="text-[#B57978] font-inter text-lg">Booking request</p>
-                        <Link href="tel:+441234567890" className="text-[#FFE9B6] font-inter text-xl z-40">+44 1234 567890</Link>
+                        {/* <Link href="tel:+441234567890" className="text-[#FFE9B6] font-inter text-xl z-40"></Link> */}
                         <Link href="mailto:info@nurcafe.co.uk" className="text-[#FFE9B6] font-inter text-xl z-40">info@nurcafe.co.uk</Link>
                     </div>
                     <div className="flex flex-col gap-2 items-center justify-center">
@@ -68,8 +68,7 @@ const Contact = ({ }) => {
                     </div>
                     <div className="flex flex-col gap-2 items-center justify-center">
                         <p className="text-[#B57978] font-inter text-lg">Opening Hours</p>
-                        <p className="text-[#FFE9B6] font-inter text-xl">Monday-Friday: 8:00 AM - 22:00 PM</p>
-                        <p className="text-[#FFE9B6] font-inter text-xl">Saturday-Sunday: 9:00 AM - 23:00 PM</p>
+                        <p className="text-[#FFE9B6] font-inter text-xl">Sunday - Saturday: 9:30 AM - 22:00 PM</p>
                     </div>
                 </div>
             </div>
